@@ -1,0 +1,101 @@
+body {
+    background-color: #131313; /* Dark background */
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.signin-container {
+    background-color: #1b1b1b; /* Dark card background */
+    padding: 60px; /* Increase padding for a larger appearance */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px; 
+    min-width: 300px; /* Increase max-width for a larger container */
+    width: 40vw; /* Responsive width */
+    text-align: center;
+    position: relative;
+}
+
+.signin-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 27px;
+    color: #fff;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.signin-input {
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.4s ease; /* Smooth transition for border color */
+}
+
+.signin-input::placeholder {
+    color: #777;
+}
+
+.signin-input:hover {
+    border-color: #FF3BFF; /* Change to pink or any color you like */
+}
+
+.signin-input:focus {
+    border-color: #FF3BFF; /* Matches hover color */
+    outline: none; /* Removes default outline on focus */
+}
+
+/* Sign-in button with sliding gradient effect */
+.signin-button {
+    display: border-box;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #FF3BFF 50%, #5C24FF 100%); /* Gradient background */
+    background-size: 240%; /* Extend background for sliding effect */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: slide-gradient 3s ease infinite; /* Apply sliding animation */
+    background-position: right;
+    background-size: 200%;
+    transition: background 700ms;
+}
+
+.signin-button:hover {
+    opacity: 0.9;
+    transform: scale(1.02); /* Slight scale-up on hover */
+    background-position: left;
+}
+  
+.signin-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.create-account {
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: text-decoration 0.4s ease;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
