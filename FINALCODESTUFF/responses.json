@@ -1,0 +1,25 @@
+[
+  {
+    "date": "",
+    "time": "",
+    "categories": [
+      "Entertainment"
+    ],
+    "duration": "Less than 1 hour",
+    "locationPreference": "On Campus",
+    "budget": "",
+    "anyBudget": false
+  },
+  {
+    "Time": "08:00",
+    "Date": "2024-08-23",
+    "Activity": [
+      "Arts & Culture",
+      "Educational"
+    ],
+    "Duration": "Less than 1 hour",
+    "Location": "On Campus",
+    "Budget": "13",
+    "anyBudget": false
+  }
+]

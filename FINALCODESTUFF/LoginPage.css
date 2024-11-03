@@ -1,0 +1,87 @@
+.login-page-body {
+    background-color: #131313; /* Dark background for login */
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.signin-container {
+    background-color: #1b1b1b; /* Dark card background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.signin-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.signin-input {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.signin-input::placeholder {
+    color: #777;
+}
+
+.signin-input:hover,
+.signin-input:focus {
+    border-color: #FF3BFF;
+    outline: none;
+}
+
+.signin-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #FF3BFF, #5C24FF);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.signin-button:hover {
+    transform: scale(1.02);
+}
+
+.signin-footer {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.create-account {
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}

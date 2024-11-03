@@ -1,0 +1,113 @@
+.create-event-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #131313;
+    overflow: hidden;
+    position: relative;
+}
+
+.create-event-back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5C24FF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-event-back-button:hover {
+    background-color: #FF3BFF;
+}
+
+.create-event-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+    overflow-y: auto;
+}
+
+.create-event-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.create-event-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-height: calc(100vh - 200px); 
+    overflow-y: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: 1px solid #5C24FF;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #FF3BFF;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(to right, #FF3BFF 50%, #5C24FF 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}

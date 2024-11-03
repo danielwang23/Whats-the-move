@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* CoverPage.css */
+  .cover-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 6vh;
+    overflow: hidden;
+  }
+  
+  /* Gradient text styling */
+  .cover-title {
+    font-size: 5rem;
+    font-weight: 350;
+    text-align: center;
+    background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38%, #5C24FF 76%, #D94FD5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+  }
+
+  /* Button with black background and gradient border */
+.cover-button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 1.2rem; 
+    font-weight: 300; 
+    color: #fff; 
+    background-color: #000; 
+    border: 2px solid transparent;
+    border-radius: 50px; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    z-index: 1; 
+  }
+  
+  /* Gradient border using a pseudo-element */
+  .cover-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #FF3BFF 0%, #5C24FF 50%, #D94FD5 100%); 
+    z-index: -1;
+  }
+  
+  /* Inner black background using another pseudo-element */
+  .cover-button::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 30px;
+    background-color: #000; 
+    transition: background-color 0.3s ease; 
+    z-index: -1;
+  }
+  
+  /* Hover effects */
+  .cover-button:hover {
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px #5C24FF,
+                0 0 40px #3f13c5, 
+                0 0 20px rgba(35, 6, 67, 0.6);
+  }
