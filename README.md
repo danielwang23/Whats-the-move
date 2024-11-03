@@ -29,6 +29,8 @@ We learned how to seamlessly integrate the frontend and backend, enhancing our s
 We aim to grow our user base, as the app’s success relies on users coming together to interact. Additionally, we hope to expand our database to include events from more towns and schools, allowing our impact to reach beyond UNC and the Chapel Hill area.
 
 ## Technologies and Frameworks
-Backend: We utilized Node.js, Python, and Flask to manage data processing on the backend. Python, along with libraries like Pandas, helped us parse data on local events. Node.js, Flask, and Python worked together to handle data from the frontend and facilitate storage.
+Backend: We used Node.js, Python, and Flask to handle data processing on the backend. Python, along with libraries like Pandas, helped us parse data on local events, while Hugging Face’s transformer NLP package analyzed user preferences to recommend the most suitable attractions or events. Node.js, Flask, and Python worked together to manage data from the frontend and facilitate storage.
 
-Frontend: For the frontend, we used HTML, CSS, and JavaScript, with React.js to create visually appealing and user-friendly interfaces. User input from the frontend was then sent to the backend for storage or further use.
+Frontend: For the frontend, we implemented HTML, CSS, and JavaScript, using React.js to design visually appealing and user-friendly interfaces. User input from the frontend was sent to the backend for storage or further analysis.
+
+Generative AI Usage: We leveraged generative AI to assist with data cleaning, parsing, and implementing unfamiliar packages or frameworks. For instance, ChatGPT helped us convert calendar data from .ics to .csv to .json formats for analysis. Generative AI also guided us in implementing the NLP package from Hugging Face, a tool we were initially unfamiliar with. On the frontend, AI support helped with formatting, ensuring the website met our visual standards. When integrating the frontend and backend, we encountered deployment issues, but generative AI guided us through debugging and resolving error messages.
