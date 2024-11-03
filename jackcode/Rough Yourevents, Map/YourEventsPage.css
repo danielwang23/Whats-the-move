@@ -62,17 +62,16 @@
   }
   
   .clear-button {
-    margin-top: 20px;
-    padding: 10px 16px;
-    font-size: 1rem;
-    background-color: #d9534f;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .clear-button:hover {
-    background-color: #c9302c;
-  }
-  
+  margin-top: 20px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #c9302c;
+}
