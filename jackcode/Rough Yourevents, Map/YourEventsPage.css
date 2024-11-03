@@ -1,0 +1,77 @@
+.your-events-page {
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .your-events-page h2 {
+    font-size: 2rem;
+    color: #87ceeb;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #5c24ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #4b1ec9;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .event-item {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .event-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #87ceeb;
+  }
+  
+  .event-item p {
+    margin: 5px 0;
+  }
+  
+  .no-events {
+    color: #aaa;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .clear-button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #c9302c;
+}
