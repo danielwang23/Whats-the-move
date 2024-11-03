@@ -1,4 +1,8 @@
-.cover-page {
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* CoverPage.css */
+  .cover-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,37 +10,70 @@
     height: 100vh;
     background-color: #000;
     font-family: 'Inter', sans-serif;
-    padding-bottom: 5vh;
+    padding-bottom: 6vh;
+    overflow: hidden;
   }
   
-  
+  /* Gradient text styling */
   .cover-title {
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 350;
     text-align: center;
     background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38%, #5C24FF 76%, #D94FD5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
-  
-  .cover-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 300; /* Lighter font */
-    color: #fff;
-    background: #000;
-    border: 2px solid transparent;
-    border-radius: 50px; /* More rounded corners */
-    background-image: linear-gradient(90deg, #FF3BFF, #5C24FF), linear-gradient(90deg, #FF3BFF, #5C24FF);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+
+  /* Button with black background and gradient border */
+.cover-button {
+    position: relative;
+    padding: 15px 30px; /* Adjust padding for size */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    font-weight: 300; /* Light font weight */
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 50px; /* Fully rounded corners */
     cursor: pointer;
+    overflow: hidden; /* Ensures pseudo-element stays within the rounded border */
     transition: all 0.3s ease;
+    z-index: 1; /* Ensures text is above the pseudo-element */
   }
   
+  /* Gradient border using a pseudo-element */
+  .cover-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 30px; /* Matches button shape */
+    background: linear-gradient(90deg, #FF3BFF 0%, #5C24FF 50%, #D94FD5 100%); /* Gradient for border */
+    z-index: -1; /* Places gradient behind the button content */
+  }
+  
+  /* Inner black background using another pseudo-element */
+  .cover-button::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 30px;
+    background-color: #000; /* Black background */
+    transition: background-color 0.3s ease; /* Smooth transition for inner background */
+    z-index: -1; /* Stays below the button content but above the gradient border */
+  }
+  
+  /* Hover effects */
   .cover-button:hover {
-    transform: scale(1.05)
+    transform: scale(1.10); /* Slightly increase size on hover */
+    box-shadow: 0 0 10px #5C24FF,
+                0 0 40px #3f13c5, 
+                0 0 20px rgba(35, 6, 67, 0.6); /* Glowing effect */
   }
