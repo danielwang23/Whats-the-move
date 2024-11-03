@@ -1,0 +1,32 @@
+.map-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .map-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #5c24ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #4b1ec9;
+  }
