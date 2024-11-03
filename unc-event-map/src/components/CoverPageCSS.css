@@ -30,17 +30,17 @@
   /* Button with black background and gradient border */
 .cover-button {
     position: relative;
-    padding: 15px 30px; /* Adjust padding for size */
-    font-size: 1.2rem; /* Adjust font size as needed */
-    font-weight: 300; /* Light font weight */
-    color: #fff; /* White text */
-    background-color: #000; /* Black background */
-    border: 2px solid transparent; /* Transparent border initially */
-    border-radius: 50px; /* Fully rounded corners */
+    padding: 15px 30px;
+    font-size: 1.2rem; 
+    font-weight: 300; 
+    color: #fff; 
+    background-color: #000; 
+    border: 2px solid transparent;
+    border-radius: 50px; 
     cursor: pointer;
-    overflow: hidden; /* Ensures pseudo-element stays within the rounded border */
+    overflow: hidden; 
     transition: all 0.3s ease;
-    z-index: 1; /* Ensures text is above the pseudo-element */
+    z-index: 1; 
   }
   
   /* Gradient border using a pseudo-element */
@@ -51,9 +51,9 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    border-radius: 30px; /* Matches button shape */
-    background: linear-gradient(90deg, #FF3BFF 0%, #5C24FF 50%, #D94FD5 100%); /* Gradient for border */
-    z-index: -1; /* Places gradient behind the button content */
+    border-radius: 30px;
+    background: linear-gradient(90deg, #FF3BFF 0%, #5C24FF 50%, #D94FD5 100%); 
+    z-index: -1;
   }
   
   /* Inner black background using another pseudo-element */
@@ -65,15 +65,15 @@
     right: 2px;
     bottom: 2px;
     border-radius: 30px;
-    background-color: #000; /* Black background */
-    transition: background-color 0.3s ease; /* Smooth transition for inner background */
-    z-index: -1; /* Stays below the button content but above the gradient border */
+    background-color: #000; 
+    transition: background-color 0.3s ease; 
+    z-index: -1;
   }
   
   /* Hover effects */
   .cover-button:hover {
-    transform: scale(1.10); /* Slightly increase size on hover */
+    transform: scale(1.10); 
     box-shadow: 0 0 10px #5C24FF,
                 0 0 40px #3f13c5, 
-                0 0 20px rgba(35, 6, 67, 0.6); /* Glowing effect */
+                0 0 20px rgba(35, 6, 67, 0.6);
   }

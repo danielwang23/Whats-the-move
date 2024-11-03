@@ -15,12 +15,21 @@ import CreateEventsPage from './components/CreateEventsPage';
 function App() {
   const [currentPage, setCurrentPage] = useState('cover');
   const [username, setUsername] = useState('');
+  const [events, setEvents] = useState([]);
 
   const navigateTo = (page) => setCurrentPage(page);
 
   const handleLogin = (name) => {
     setUsername(name);
     navigateTo('account');
+  };
+
+  const addEvent = (eventDetails) => {
+    setEvents((prevEvents) => [...prevEvents, eventDetails]);
+  };
+
+  const deleteEvent = (index) => {
+    setEvents((prevEvents) => prevEvents.filter((_, i) => i !== index));
   };
 
   return (
@@ -35,9 +44,27 @@ function App() {
       {currentPage === 'question4' && <Question4Page onNext={() => navigateTo('question5')} />}
       {currentPage === 'question5' && <Question5Page onNext={() => navigateTo('map')} />}
       
-      {currentPage === 'map' && <Map onBack={() => navigateTo('account')} />}
-      {currentPage === 'yourEvents' && <YourEventsPage onBack={() => navigateTo('account')} />}
-      {currentPage === 'createEvents' && <CreateEventsPage onBack={() => navigateTo('account')} />}
+      {currentPage === 'map' && (
+        <Map 
+          onBack={() => navigateTo('account')} 
+          onAddEvent={addEvent}
+        />
+      )}
+      
+      {currentPage === 'yourEvents' && (
+        <YourEventsPage 
+          onBack={() => navigateTo('account')}
+          events={events} 
+          onDeleteEvent={deleteEvent} 
+        />
+      )}
+      
+      {currentPage === 'createEvents' && (
+        <CreateEventsPage 
+          onBack={() => navigateTo('account')}
+          onAddEvent={addEvent}
+        />
+      )}
     </div>
   );
 }

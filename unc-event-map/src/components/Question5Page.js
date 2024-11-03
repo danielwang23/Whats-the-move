@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './QuestionPage5CSS.css';
 
 function Question5Page({ onNext }) {
-  const [budget, setBudget] = useState(50); // Default to midpoint
+  const [budget, setBudget] = useState(10); 
   const [anyBudget, setAnyBudget] = useState(false);
 
   const handleBudgetChange = (e) => {
