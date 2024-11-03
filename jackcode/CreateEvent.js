@@ -40,7 +40,6 @@ function CreateEvent({ onAddEvent }) {
     <div className="create-event-container">
       <h2 className="create-event-title">Create Event</h2>
       <form className="create-event-form" onSubmit={handleSubmit}>
-
         {/* Event Title */}
         <div className="form-group full-width">
           <label className="form-label">Event Title</label>
