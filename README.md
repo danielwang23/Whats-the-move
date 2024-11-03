@@ -22,7 +22,7 @@ We are incredibly proud of our NLP recommendation algorithm, as well as the plat
 
 We learned how to seamlessly integrate the front end and back end, enhancing our skills in building a cohesive application. Additionally, we refined our frontend skills to design a visually appealing and user-friendly interface.
 
-## What's next for What The Move?
+## What's next for What's The Move?
 
 We aim to grow our user base, as the app’s success relies on users coming together to interact. Additionally, we hope to expand our database to include events from more towns and schools, allowing our impact to reach beyond UNC and the Chapel Hill area.
 
